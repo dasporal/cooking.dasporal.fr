@@ -2,7 +2,7 @@
 title: "Moelleux Aux 3 Chocolats"
 date: 2021-01-02T12:18:32+01:00
 categories: [patisserie]
-tags: [dessert, rapide,biscuit]
+tags: [dessert, rapide, biscuit]
 draft: false
 ---
 ### Source : PtitChef
