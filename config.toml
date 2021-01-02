@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://cook.dasporal.fr/"
 languageCode = "fr-FR"
-title = "Dasporal's cooking"
+title = "Daspie's cooking"
 theme = "smol"
 
 # Parameters
@@ -43,3 +43,7 @@ theme = "smol"
         name = "Imprint"
         url = "/imprint"
         weight = 3 
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"        
