@@ -1,4 +1,4 @@
-baseURL = "https://cook.dasporal.fr/"
+baseURL = "https://cooking.dasporal.fr/"
 languageCode = "fr-FR"
 title = "Daspie's cooking"
 theme = "smol"
