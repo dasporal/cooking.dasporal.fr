@@ -14,7 +14,7 @@ draft: false
 &nbsp;
 
 # Ingrédients
-- 500g de beurre
+- 500g de farine
 - 6 oeufs
 - 1 litre de lait entier
 - 1 sachet de sucre vanillé
