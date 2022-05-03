@@ -2,7 +2,7 @@
 title: "Fondant Au Chocolat"
 date: 2021-01-02T12:20:08+01:00
 categories: [patisserie]
-tags: [dessert, gouter, rapide, biscuit]
+tags: [dessert, gouter, rapide, gâteau]
 draft: false
 ---
 
