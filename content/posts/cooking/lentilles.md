@@ -1,5 +1,5 @@
 ---
-title: "Purée"
+title: "Lentilles"
 date: 2021-01-17T12:18:32+01:00
 categories: [cuisine]
 tags: [déjeûner, dîner, repas, vegan]
