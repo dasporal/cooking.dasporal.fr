@@ -1,6 +1,6 @@
 ---
 title: "Nouilles"
-date: 2021-01-17T12:18:32+01:00
+date: 2022-05-03T12:18:32+01:00
 categories: [cuisine]
 tags: [déjeûner, dîner, repas, vegan]
 draft: false
