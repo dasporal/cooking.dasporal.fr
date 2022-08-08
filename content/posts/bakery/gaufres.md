@@ -1,5 +1,5 @@
 ---
-title: "Gaufres"
+title: "Gaufres de Cyril Lignac"
 date: 2022-08-08T17:03:09+02:00
 categories: [patisserie]
 tags: [dessert, gouter, rapide]
