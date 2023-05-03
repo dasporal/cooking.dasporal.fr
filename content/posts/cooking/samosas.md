@@ -1,6 +1,6 @@
 ---
 title: "Samosas"
-date: 2023-05-03T12:18:32+01:00
+date: 2023-05-02T12:18:32+01:00
 categories: [cuisine]
 tags: [déjeûner, dîner, repas]
 draft: false
