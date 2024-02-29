@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Amine&#39;s cooking</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Amine&#39;s cooking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Tue, 02 May 2023 12:18:32 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Déjeûner</title>
+      <link>http://localhost:1313/tags/d%C3%A9je%C3%BBner/</link>
+      <pubDate>Tue, 02 May 2023 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/d%C3%A9je%C3%BBner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dîner</title>
+      <link>http://localhost:1313/tags/d%C3%AEner/</link>
+      <pubDate>Tue, 02 May 2023 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/d%C3%AEner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repas</title>
+      <link>http://localhost:1313/tags/repas/</link>
+      <pubDate>Tue, 02 May 2023 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/repas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dessert</title>
+      <link>http://localhost:1313/tags/dessert/</link>
+      <pubDate>Mon, 08 Aug 2022 17:03:09 +0200</pubDate>
+      <guid>http://localhost:1313/tags/dessert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gouter</title>
+      <link>http://localhost:1313/tags/gouter/</link>
+      <pubDate>Mon, 08 Aug 2022 17:03:09 +0200</pubDate>
+      <guid>http://localhost:1313/tags/gouter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rapide</title>
+      <link>http://localhost:1313/tags/rapide/</link>
+      <pubDate>Mon, 08 Aug 2022 17:03:09 +0200</pubDate>
+      <guid>http://localhost:1313/tags/rapide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Biscuit</title>
+      <link>http://localhost:1313/tags/biscuit/</link>
+      <pubDate>Sat, 14 May 2022 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/biscuit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Goûter</title>
+      <link>http://localhost:1313/tags/go%C3%BBter/</link>
+      <pubDate>Sat, 14 May 2022 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/go%C3%BBter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vegan</title>
+      <link>http://localhost:1313/tags/vegan/</link>
+      <pubDate>Tue, 03 May 2022 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/vegan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Facile</title>
+      <link>http://localhost:1313/tags/facile/</link>
+      <pubDate>Sun, 18 Apr 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/tags/facile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Side</title>
+      <link>http://localhost:1313/tags/side/</link>
+      <pubDate>Sun, 18 Apr 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/tags/side/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snack</title>
+      <link>http://localhost:1313/tags/snack/</link>
+      <pubDate>Sun, 18 Apr 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/tags/snack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apéro</title>
+      <link>http://localhost:1313/tags/ap%C3%A9ro/</link>
+      <pubDate>Thu, 07 Jan 2021 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/tags/ap%C3%A9ro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gâteau</title>
+      <link>http://localhost:1313/tags/g%C3%A2teau/</link>
+      <pubDate>Sat, 02 Jan 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/tags/g%C3%A2teau/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

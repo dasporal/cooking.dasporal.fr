@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biscuit on Amine&#39;s cooking</title>
+    <link>http://localhost:1313/tags/biscuit/</link>
+    <description>Recent content in Biscuit on Amine&#39;s cooking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 14 May 2022 12:18:32 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/biscuit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meringues</title>
+      <link>http://localhost:1313/posts/bakery/meringues/</link>
+      <pubDate>Sat, 14 May 2022 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/meringues/</guid>
+      <description>Source : Marmiton Preparation : 10 minutes Cuisson : 30 minutes pour des meringues molles, 1h croustillantes, 45 minutes entre les deux Parts : 20 Ingrédients 250g de sucre semoule 4 jaunes d&amp;rsquo;oeufs Une pincée de sel Extrait de vanille Recette Sortir les jaunes d&amp;rsquo;oeufs 15 minutes avant de les monter en neige. Préchauffer le four à 120°. Ajouter le sel aux blancs d&amp;rsquo;oeufs. Battre les oeufs en neige ferme. Incorporer l&amp;rsquo;extrait de vanille et le sucre par petites quantités.</description>
+    </item>
+    <item>
+      <title>Cookies</title>
+      <link>http://localhost:1313/posts/bakery/cookies/</link>
+      <pubDate>Thu, 15 Apr 2021 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/cookies/</guid>
+      <description>Source : Bon Appetit Preparation : 10 minutes Cuisson : ~ 8 minutes Parts : ~ 16 Ingrédients 200g de farine 4g de gros sel 4g de bicarbonate de soude 170g de beurre doux 200g de sucre brun 50g de sucre blanc 1 oeuf 2 jaune d&amp;rsquo;oeufs 2 teaspoons d&amp;rsquo;extrait de vanille 1 tablette de chocolat Recette Découper la tablette de chocolat en copeaux. Préchauffer le four à 190°. Mélanger la farine, le sel et le bicarbonate de soude ensemble.</description>
+    </item>
+    <item>
+      <title>Crêpes</title>
+      <link>http://localhost:1313/posts/bakery/crepes/</link>
+      <pubDate>Sat, 02 Jan 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/crepes/</guid>
+      <description>Source : Maman Preparation : 15 minutes Cuisson : 1 minute par côté Conservation de la pâte : 3 jours Ingrédients 500g de farine 6 oeufs 1 litre de lait entier 1 sachet de sucre vanillé 4 cuillères à soupe d&amp;rsquo;huile 2 bouchons d&amp;rsquo;eau de fleur d&amp;rsquo;oranger 1 pincée de sel Recette Dans un saladier, verser la farine. Mélanger délicatement à l&amp;rsquo;aide d&amp;rsquo;un fouet les oeufs, le sucre vanillé, le lait, l&amp;rsquo;huile, l&amp;rsquo;eau de fleur d&amp;rsquo;oranger, et le sel.</description>
+    </item>
+    <item>
+      <title>Moelleux Aux 3 Chocolats</title>
+      <link>http://localhost:1313/posts/bakery/moelleux-aux-3-chocolats/</link>
+      <pubDate>Sat, 02 Jan 2021 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/moelleux-aux-3-chocolats/</guid>
+      <description>Source : PtitChef Preparation : 10 minutes Cuisson : ~ 18 minutes Parts : 8 Ingrédients 75g de chocolat noir à 70% 75g de chocolat au lait Le double de carrés de chocolat blanc qu&amp;rsquo;il y a de minis moelleux 2 oeufs 80g de beurre 150g de farine 1/2 sachet de levure chimique 100g de sucre en poudre 2 pincées de sel Recette Faire fondre le beurre et laisser un peu refroidir.</description>
+    </item>
+  </channel>
+</rss>

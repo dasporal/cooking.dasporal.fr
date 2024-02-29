@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apéro on Amine&#39;s cooking</title>
+    <link>http://localhost:1313/tags/ap%C3%A9ro/</link>
+    <description>Recent content in Apéro on Amine&#39;s cooking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Thu, 07 Jan 2021 12:18:32 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ap%C3%A9ro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Onion rings</title>
+      <link>http://localhost:1313/posts/cooking/onion-rings/</link>
+      <pubDate>Thu, 07 Jan 2021 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cooking/onion-rings/</guid>
+      <description>Source : Daspie Preparation : 10 minutes Cuisson : ~ 2 minutes Ingrédients 1 oignon De la farine Du lait (végétal ou autre) Recette Couper et séparer finement les rondelles d&amp;rsquo;oignons. Faire tremper les rondelles dans le lait. Secouer les rondelles avant de les passer dans la farine et mélanger. Secouer les rondelles pour enlever le surplus de farine avant de les mettres à cuire à 190° pendant le temps de cuisson indiqué.</description>
+    </item>
+  </channel>
+</rss>

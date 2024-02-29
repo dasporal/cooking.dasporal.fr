@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goûter on Amine&#39;s cooking</title>
+    <link>http://localhost:1313/tags/go%C3%BBter/</link>
+    <description>Recent content in Goûter on Amine&#39;s cooking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 14 May 2022 12:18:32 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/go%C3%BBter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meringues</title>
+      <link>http://localhost:1313/posts/bakery/meringues/</link>
+      <pubDate>Sat, 14 May 2022 12:18:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/meringues/</guid>
+      <description>Source : Marmiton Preparation : 10 minutes Cuisson : 30 minutes pour des meringues molles, 1h croustillantes, 45 minutes entre les deux Parts : 20 Ingrédients 250g de sucre semoule 4 jaunes d&amp;rsquo;oeufs Une pincée de sel Extrait de vanille Recette Sortir les jaunes d&amp;rsquo;oeufs 15 minutes avant de les monter en neige. Préchauffer le four à 120°. Ajouter le sel aux blancs d&amp;rsquo;oeufs. Battre les oeufs en neige ferme. Incorporer l&amp;rsquo;extrait de vanille et le sucre par petites quantités.</description>
+    </item>
+    <item>
+      <title>Madeleines</title>
+      <link>http://localhost:1313/posts/bakery/madeleines/</link>
+      <pubDate>Sun, 18 Apr 2021 12:20:08 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bakery/madeleines/</guid>
+      <description>Source : Ptitchef Preparation : 15 minutes Cuisson : 20 minutes Parts : 15 Ingrédients 300g de farine 200g de sucre blanc 20cl d&amp;rsquo;huile 10cl de crème 1 sachet de levure 1 pincée de sel 4 oeufs Recette Préchauffer le four à 190°. Mettre la farine, le sucre, le sel et la levure dans un saladier. Ajouter les oeufs et bien mélanger. Ajouter l&amp;rsquo;huile et mélanger. Ajouter la crème liquide et mélanger jusqu&amp;rsquo;à obtenir un mélange homogène.</description>
+    </item>
+  </channel>
+</rss>
