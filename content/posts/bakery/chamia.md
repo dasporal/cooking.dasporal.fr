@@ -35,7 +35,8 @@ draft: false
 - Mélanger la semoule, le sucre et le sel dans un saladier.
 - Rajouter le beurre fondu et mélanger.
 - Rajouter 75ml d'eau de fleur d'oranger et 75ml d'eau et mélanger.
-- Laisser reposer au moins 3h à l'extérieur.
+- Laisser reposer au moins 3h, idéalement 8h.
+
 - Préchauffer le four à 200 degrés.
 - Après avoir laissé reposer la pâte, incorporer le mélange d'eau de fleur d'oranger et d'eau et mélanger.
 - Une fois la semoule prête, la déposer et l'applatir dans un plat badigeonné d'huile.
