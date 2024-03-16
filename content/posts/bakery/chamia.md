@@ -26,16 +26,16 @@ draft: false
 &nbsp;
 
 # Recette
+## Sirop de sucre
+- Porter à ébullition l'eau et le sucre.
+- Rajouter l'eau de fleur d'oranger et laisser reposer.
+
 ## Pâte
 - Mettre de côté 75ml d'eau et 75ml d'eau de fleur d'oranger.
 - Mélanger la semoule, le sucre et le sel dans un saladier.
 - Rajouter le beurre fondu et mélanger.
 - Rajouter 75ml d'eau de fleur d'oranger et 75ml d'eau et mélanger.
-- Laisser reposer au moins 3h à l'extérieur.
-
-## Sirop de sucre
-- Porter à ébullition l'eau et le sucre.
-- Rajouter l'eau de fleur d'oranger et laisser reposer.
+- Laisser reposer au moins 3h, idéalement 8h.
 
 - Préchauffer le four à 200 degrés.
 - Après avoir laissé reposer la pâte, incorporer le mélange d'eau de fleur d'oranger et d'eau et mélanger.
