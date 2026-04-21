@@ -1,0 +1,161 @@
+---
+import "../styles/global.css";
+
+const {
+    title = "Daspie's recipes",
+    description = "Simple home cooking and bakery recipes.",
+} = Astro.props;
+
+const pathname = Astro.url.pathname;
+
+const navItems = [
+    { href: "/", label: "Index" },
+    { href: "/cooking", label: "Cooking" },
+    { href: "/bakery", label: "Bakery" },
+    { href: "/tags", label: "Tags" },
+];
+
+---
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+        <title>{title}</title>
+        <script is:inline>
+            const schemeKey = "recipe-color-scheme";
+
+            const setThemeButtonState = (scheme) => {
+                const button = document.querySelector("[data-theme-toggle]");
+                if (!button) return;
+
+                const isDark = scheme === "dark";
+                button.setAttribute("aria-pressed", String(isDark));
+                button.setAttribute(
+                    "aria-label",
+                    isDark ? "Switch to light theme" : "Switch to dark theme",
+                );
+            };
+
+            const getInitialScheme = () => {
+                const stored = localStorage.getItem(schemeKey);
+                if (stored === "light" || stored === "dark") return stored;
+
+                return window.matchMedia("(prefers-color-scheme: dark)")
+                    .matches
+                    ? "dark"
+                    : "light";
+            };
+
+            const applyScheme = (scheme) => {
+                const nextScheme = scheme === "dark" ? "dark" : "light";
+                document.documentElement.dataset.colorScheme = nextScheme;
+                setThemeButtonState(nextScheme);
+            };
+
+            const bindThemeToggle = () => {
+                const button = document.querySelector("[data-theme-toggle]");
+                if (!button || button.dataset.bound === "true") return;
+
+                button.dataset.bound = "true";
+                button.addEventListener("click", () => {
+                    const nextScheme =
+                        document.documentElement.dataset.colorScheme === "dark"
+                            ? "light"
+                            : "dark";
+
+                    localStorage.setItem(schemeKey, nextScheme);
+                    applyScheme(nextScheme);
+                });
+            };
+
+            const initializeTheme = () => {
+                applyScheme(getInitialScheme());
+                bindThemeToggle();
+            };
+
+            applyScheme(getInitialScheme());
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initializeTheme, {
+                    once: true,
+                });
+            } else {
+                initializeTheme();
+            }
+
+            document.addEventListener("astro:page-load", initializeTheme);
+        </script>
+    </head>
+    <body class="min-h-screen antialiased">
+        <div
+            class="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-3 py-3 sm:px-5 sm:py-5"
+        >
+            <header class="panel mb-4">
+                <div
+                    class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"
+                >
+                    <div>
+                        <a
+                            class="site-title inline-block text-xl font-bold tracking-[0.08em]"
+                            href="/"
+                        >
+                            Daspie's recipes
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2 text-sm">
+                        <nav
+                            class="flex flex-wrap gap-2"
+                            aria-label="Main navigation"
+                        >
+                            {
+                                navItems.map((item) => {
+                                    const isActive =
+                                        item.href === "/"
+                                            ? pathname === "/"
+                                            : pathname === item.href ||
+                                              pathname.startsWith(
+                                                  `${item.href}/`,
+                                              );
+
+                                    return (
+                                        <a
+                                            class:list={[
+                                                "nav-link",
+                                                isActive && "nav-link-active",
+                                            ]}
+                                            href={item.href}
+                                        >
+                                            {item.label}
+                                        </a>
+                                    );
+                                })
+                            }
+                        </nav>
+
+                        <div
+                            class="flex items-center gap-2"
+                            aria-label="Display controls"
+                        >
+                            <button
+                                type="button"
+                                class="icon-toggle"
+                                data-theme-toggle
+                                aria-label="Switch to dark theme"
+                                title="Light and dark mode"
+                            >
+                                <span aria-hidden="true">◐</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex-1">
+                <slot />
+            </main>
+        </div>
+    </body>
+</html>

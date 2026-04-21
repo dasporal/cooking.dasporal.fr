@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+:root {
+  --page-bg: #f7f1e7;
+  --page-overlay: rgba(255, 252, 246, 0.82);
+  --text-main: #191512;
+  --text-muted: #6a5f56;
+  --line-color: #28211c;
+  --line-soft: #c4b8ab;
+  --panel-bg: #fffdfa;
+  --card-bg: #ffffff;
+  --link-color: #0b4dbb;
+  --link-hover-bg: #fff0b3;
+  --tag-hover-bg: #e9f1ff;
+  --active-bg: #f1e6d2;
+  --count-color: #8a7f76;
+  --panel-shadow: rgba(40, 33, 28, 0.08);
+  --panel-radius: 0px;
+}
+
+html[data-color-scheme="dark"] {
+  --page-bg: #121110;
+  --page-overlay: rgba(18, 17, 16, 0.76);
+  --text-main: #f3ede5;
+  --text-muted: #cabfb2;
+  --line-color: #e6dbcf;
+  --line-soft: #70665d;
+  --panel-bg: #1b1917;
+  --card-bg: #161412;
+  --link-color: #8cb8ff;
+  --link-hover-bg: #2a2927;
+  --tag-hover-bg: #252f3d;
+  --active-bg: #3a342c;
+  --count-color: #a89d91;
+  --panel-shadow: rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--page-bg);
+    background-image: linear-gradient(to bottom, var(--page-overlay), var(--page-overlay));
+    color: var(--text-main);
+  }
+
+  ::selection {
+    @apply bg-lime-300 text-stone-950;
+  }
+
+  a,
+  button {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply p-4 sm:p-5;
+    border-top: 3px double var(--line-color);
+    border-bottom: 1px solid var(--line-soft);
+    background-color: var(--panel-bg);
+    border-radius: var(--panel-radius);
+    box-shadow: 0 1px 0 0 var(--panel-shadow);
+  }
+
+  .recipe-card {
+    @apply p-3 sm:p-4;
+    border-top: 1px solid var(--line-soft);
+    background-color: var(--card-bg);
+    border-radius: var(--panel-radius);
+  }
+
+  .nav-link {
+    @apply px-0 py-1 text-sm;
+    border-bottom: 1px solid transparent;
+    color: var(--link-color);
+  }
+
+  .nav-link:hover {
+    border-bottom-color: var(--line-color);
+    background-color: transparent;
+  }
+
+  .nav-link-active {
+    border-bottom-color: var(--line-color);
+    color: var(--text-main);
+  }
+
+  .tag-link {
+    @apply inline-flex items-center gap-1 px-2 py-1 text-[11px] uppercase tracking-[0.12em];
+    border: 1px solid var(--line-soft);
+    background-color: transparent;
+    color: var(--link-color);
+  }
+
+  .tag-link:hover {
+    background-color: var(--tag-hover-bg);
+  }
+
+  .tag-link-active {
+    background-color: var(--active-bg);
+    color: var(--text-main);
+  }
+
+  .icon-toggle {
+    @apply px-2 py-1 text-sm;
+    border: 1px solid var(--line-soft);
+    background-color: transparent;
+    color: var(--link-color);
+    border-radius: var(--panel-radius);
+    min-width: 2.25rem;
+  }
+
+  .icon-toggle:hover {
+    background-color: var(--link-hover-bg);
+  }
+
+  .icon-toggle[aria-pressed="true"] {
+    background-color: var(--active-bg);
+    color: var(--text-main);
+  }
+
+  .site-link,
+  .site-title {
+    color: var(--link-color);
+  }
+
+  .site-title {
+    font-family: var(--font-serif);
+  }
+
+  .text-muted,
+  .meta-text {
+    color: var(--text-muted);
+  }
+
+  .count-text {
+    color: var(--count-color);
+  }
+
+  .section-divider {
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .recipe-copy {
+    @apply text-[16px] leading-7 sm:text-[17px] sm:leading-8;
+    font-family: var(--font-serif);
+    color: var(--text-main);
+  }
+
+  .recipe-copy h1,
+  .recipe-copy h2,
+  .recipe-copy h3 {
+    @apply mt-8 mb-3 font-bold tracking-tight;
+    font-family: var(--font-sans);
+  }
+
+  .recipe-copy h1 {
+    @apply text-2xl;
+  }
+
+  .recipe-copy h2 {
+    @apply text-xl;
+  }
+
+  .recipe-copy h3 {
+    @apply text-lg;
+  }
+
+  .recipe-copy p {
+    @apply my-3;
+  }
+
+  .recipe-copy ul,
+  .recipe-copy ol {
+    @apply my-3 pl-5;
+  }
+
+  .recipe-copy li {
+    @apply my-2;
+  }
+
+  .recipe-copy hr {
+    @apply my-6;
+    border-color: var(--line-soft);
+  }
+}

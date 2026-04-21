@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getAllTags, getRecipesByTag, getTagLabel, slugifyTag } from "../../lib/recipes";
+
+export function getStaticPaths() {
+  return getAllTags().map((tag) => ({ params: { tag: tag.slug } }));
+}
+
+const { tag } = Astro.params;
+const currentTag = tag ?? "";
+const label = getTagLabel(currentTag);
+const recipes = getRecipesByTag(currentTag);
+---
+
+<Layout title={`#${label} | Daspie's recipes`} description={`Recipes tagged ${label}.`}>
+  <section class="panel">
+    <div class="section-divider mb-5 pb-4">
+      <p class="meta-text text-xs uppercase tracking-[0.25em]">Tag</p>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">#{label}</h1>
+      <p class="text-muted mt-2 text-sm sm:text-base">{recipes.length} recipe{recipes.length > 1 ? "s" : ""} found.</p>
+    </div>
+
+    <ul class="space-y-3">
+      {recipes.map((recipe) => (
+        <li class="recipe-card">
+          <a class="site-link text-lg font-bold underline decoration-2 underline-offset-2" href={recipe.url}>
+            {recipe.title}
+          </a>
+          <div class="meta-text mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em]">
+            <span>{recipe.sectionLabel}</span>
+            {recipe.date && <span>{new Date(recipe.date).toLocaleDateString("fr-FR")}</span>}
+          </div>
+
+          {recipe.tags.length > 0 && (
+            <div class="mt-3 flex flex-wrap gap-2">
+              {recipe.tags.map((recipeTag) => (
+                <a
+                  class:list={[
+                    "tag-link",
+                    slugifyTag(recipeTag) === currentTag && "tag-link-active",
+                  ]}
+                  href={`/tags/${slugifyTag(recipeTag)}/`}
+                >
+                  #{recipeTag}
+                </a>
+              ))}
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

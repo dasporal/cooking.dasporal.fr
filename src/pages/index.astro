@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getAllRecipes, getAllTags, slugifyTag } from "../lib/recipes";
+
+const recipes = getAllRecipes();
+const tags = getAllTags();
+---
+
+<Layout
+    title="Daspie's recipes"
+    description="A minimal archive of cooking and bakery recipes."
+>
+    <section class="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)]">
+        <div class="panel">
+            <div class="section-divider mb-5 flex items-start justify-between gap-4 pb-4">
+                <div>
+                    <p class="meta-text text-xs uppercase tracking-[0.25em]">
+                        Recipe index
+                    </p>
+                    <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+                        All recipes
+                    </h1>
+                </div>
+
+                <div class="meta-text hidden text-right text-xs uppercase tracking-[0.2em] sm:block">
+                    <div>{recipes.length} recipes</div>
+                    <div>{tags.length} tags</div>
+                </div>
+            </div>
+
+            <div class="section-divider mb-5 flex flex-wrap gap-2 pb-4">
+                <a class="nav-link" href="/cooking/">Cooking</a>
+                <a class="nav-link" href="/bakery/">Bakery</a>
+                <a class="nav-link" href="/tags/">Browse tags</a>
+            </div>
+
+            <ul class="space-y-3">
+                {
+                    recipes.map((recipe) => (
+                        <li class="recipe-card">
+                            <div class="flex items-start justify-between gap-3">
+                                <div>
+                                    <a class="site-link text-lg font-bold underline decoration-2 underline-offset-2" href={recipe.url}>
+                                        {recipe.title}
+                                    </a>
+                                    <div class="meta-text mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em]">
+                                        <span>{recipe.sectionLabel}</span>
+                                        {recipe.date && (
+                                            <span>
+                                                {new Date(
+                                                    recipe.date,
+                                                ).toLocaleDateString("fr-FR")}
+                                            </span>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {recipe.tags.length > 0 && (
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    {recipe.tags.map((tag) => (
+                                        <a
+                                            class="tag-link"
+                                            href={`/tags/${slugifyTag(tag)}/`}
+                                        >
+                                            #{tag}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+
+        <aside class="panel h-fit" id="tags">
+            <p class="meta-text text-xs uppercase tracking-[0.25em]">
+                Tag navigation
+            </p>
+            <h2 class="mt-2 text-2xl font-bold">Browse by tag</h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+                {
+                    tags.map((tag) => (
+                        <a class="tag-link" href={`/tags/${tag.slug}/`}>
+                            #{tag.label} <span class="count-text">({tag.count})</span>
+                        </a>
+                    ))
+                }
+            </div>
+        </aside>
+    </section>
+</Layout>

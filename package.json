@@ -1,0 +1,25 @@
+{
+  "name": "cooking-dasporal-fr",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "dependencies": {
+    "@astrojs/netlify": "^7.0.7",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.1.8",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.46.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

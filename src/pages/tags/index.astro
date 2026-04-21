@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getAllTags } from "../../lib/recipes";
+
+const tags = getAllTags();
+---
+
+<Layout title="Tags | Daspie's recipes" description="Browse recipes by tag.">
+  <section class="panel">
+    <div class="section-divider mb-5 pb-4">
+      <p class="meta-text text-xs uppercase tracking-[0.25em]">Navigation</p>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Tags</h1>
+      <p class="text-muted mt-2 text-sm sm:text-base">Every tag across cooking and bakery recipes.</p>
+    </div>
+
+    <div class="flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <a class="tag-link" href={`/tags/${tag.slug}/`}>
+          #{tag.label} <span class="count-text">({tag.count})</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

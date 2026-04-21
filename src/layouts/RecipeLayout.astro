@@ -1,0 +1,42 @@
+---
+import Layout from "./Layout.astro";
+import { getSectionLabel, slugifyTag } from "../lib/recipes";
+
+const { frontmatter } = Astro.props;
+
+const pathname = Astro.url.pathname;
+const section = pathname.split("/").filter(Boolean)[0] === "bakery" ? "bakery" : "cooking";
+const title = frontmatter.title ?? "Recipe";
+const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
+const categories = Array.isArray(frontmatter.categories) ? frontmatter.categories : [];
+const date = frontmatter.date ? new Date(frontmatter.date) : null;
+const hasValidDate = Boolean(date && !Number.isNaN(date.getTime()));
+---
+
+<Layout title={`${title} | Daspie's recipes`} description={`Recipe for ${title}.`}>
+  <section class="panel space-y-4">
+    <header class="section-divider space-y-3 pb-4">
+      <div class="meta-text flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em]">
+        <span>{getSectionLabel(section)}</span>
+        {hasValidDate && <span>{date.toLocaleDateString("fr-FR")}</span>}
+        {categories.map((category) => <span>{category}</span>)}
+      </div>
+
+      <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
+
+      {tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <a class="tag-link" href={`/tags/${slugifyTag(tag)}/`}>
+              #{tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <article class="recipe-copy">
+      <slot />
+    </article>
+  </section>
+</Layout>
